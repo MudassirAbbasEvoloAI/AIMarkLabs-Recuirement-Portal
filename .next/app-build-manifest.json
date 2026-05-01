@@ -1,0 +1,83 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/api/setup-auth/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/setup-auth/route.js"
+    ],
+    "/portal/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/portal/layout.css",
+      "static/chunks/app/portal/layout.js"
+    ],
+    "/portal/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/portal/login/page.css",
+      "static/chunks/app/portal/login/page.js"
+    ],
+    "/careers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/careers/page.css",
+      "static/chunks/app/careers/page.js"
+    ],
+    "/api/positions/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/positions/route.js"
+    ],
+    "/portal/leads/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/portal/leads/page.css",
+      "static/chunks/app/portal/leads/page.js"
+    ],
+    "/api/leads/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/leads/route.js"
+    ],
+    "/portal/applications/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/portal/applications/page.css",
+      "static/chunks/app/portal/applications/page.js"
+    ],
+    "/api/applications/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/applications/route.js"
+    ],
+    "/portal/positions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/portal/positions/page.css",
+      "static/chunks/app/portal/positions/page.js"
+    ],
+    "/api/positions/all/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/positions/all/route.js"
+    ],
+    "/portal/settings/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/portal/settings/page.css",
+      "static/chunks/app/portal/settings/page.js"
+    ]
+  }
+}

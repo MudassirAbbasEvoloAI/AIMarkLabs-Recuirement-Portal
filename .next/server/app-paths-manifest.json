@@ -1,0 +1,13 @@
+{
+  "/api/positions/route": "app/api/positions/route.js",
+  "/api/leads/route": "app/api/leads/route.js",
+  "/api/applications/route": "app/api/applications/route.js",
+  "/api/positions/all/route": "app/api/positions/all/route.js",
+  "/page": "app/page.js",
+  "/careers/page": "app/careers/page.js",
+  "/portal/login/page": "app/portal/login/page.js",
+  "/portal/leads/page": "app/portal/leads/page.js",
+  "/portal/applications/page": "app/portal/applications/page.js",
+  "/portal/positions/page": "app/portal/positions/page.js",
+  "/portal/settings/page": "app/portal/settings/page.js"
+}

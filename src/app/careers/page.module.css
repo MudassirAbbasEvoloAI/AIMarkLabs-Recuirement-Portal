@@ -1,0 +1,45 @@
+.wrap { min-height:100vh; }
+.header { background:#fff; padding:clamp(2rem,5vw,3.5rem) clamp(1rem,5vw,2.5rem); border-bottom:3px solid var(--bg); }
+.headerInner { max-width:960px; margin:0 auto; }
+.eyebrow { font-size:.7rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--orange); margin-bottom:.6rem; }
+.h1 { font-family:var(--fd); font-size:clamp(2.2rem,6vw,3.5rem); font-weight:800; line-height:1.1; color:var(--navy); margin-bottom:.75rem; letter-spacing:-0.02em; }
+.h1 em { font-style:normal; color:var(--orange); }
+.sub { font-size:.95rem; color:var(--t2); font-weight:300; max-width:520px; line-height:1.7; }
+
+.filters { display:flex; flex-wrap:wrap; gap:10px; padding:1rem clamp(1rem,4vw,2.5rem); background:#fff; border-bottom:1px solid rgba(19,25,58,0.07); max-width:100%; }
+.searchWrap { position:relative; flex:1; min-width:200px; }
+.searchIcon { position:absolute; left:10px; top:50%; transform:translateY(-50%); pointer-events:none; font-size:.88rem; }
+.search { width:100%; background:var(--bg); border:1.5px solid rgba(19,25,58,0.12); border-radius:9px; padding:.6rem 1rem .6rem 2.1rem; font-family:var(--fb); font-size:.88rem; color:var(--t1); outline:none; transition:border-color .2s; }
+.search:focus { border-color:var(--orange); }
+.search::placeholder { color:var(--t3); }
+.fsel { background:var(--bg); border:1.5px solid rgba(19,25,58,0.12); border-radius:9px; padding:.6rem 1rem; font-family:var(--fb); font-size:.85rem; color:var(--t2); cursor:pointer; outline:none; min-width:150px; appearance:none; transition:border-color .2s; }
+.fsel:focus { border-color:var(--orange); }
+
+.content { padding:1.5rem clamp(1rem,4vw,2.5rem); max-width:1080px; margin:0 auto; }
+.count { font-size:.8rem; color:var(--t3); margin-bottom:1rem; }
+.count strong { color:var(--t1); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; }
+
+.posCard { background:#fff; border:1px solid rgba(19,25,58,0.09); border-radius:14px; padding:1.4rem; transition:transform .2s,border-color .2s,box-shadow .2s; animation:fadeUp .4s ease both; cursor:default; }
+.posCard:hover { transform:translateY(-3px); border-color:rgba(244,122,32,0.22); box-shadow:var(--shadow-lg); }
+.posHeader { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:.8rem; }
+.posDept { font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--orange); margin-bottom:3px; }
+.posTitle { font-family:var(--fd); font-weight:800; font-size:1rem; color:var(--navy); line-height:1.25; }
+.posType { font-size:.7rem; font-weight:700; background:var(--info-dim); color:var(--info); border:1px solid rgba(37,99,235,0.18); border-radius:20px; padding:3px 10px; white-space:nowrap; flex-shrink:0; }
+.posMeta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:.85rem; }
+.posMeta span { font-size:.76rem; color:var(--t2); }
+.posDesc { font-size:.82rem; color:var(--t2); line-height:1.6; margin-bottom:.9rem; }
+.reqs { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:1rem; }
+.req { font-size:.71rem; background:var(--bg); border:1px solid rgba(19,25,58,0.1); border-radius:6px; padding:3px 9px; color:var(--t2); }
+.posFooter { padding-top:.9rem; border-top:1px solid rgba(19,25,58,0.07); }
+.applyBtn { display:inline-flex; align-items:center; background:var(--orange); color:#fff; border:none; border-radius:9px; padding:9px 20px; font-family:var(--fd); font-weight:700; font-size:.85rem; cursor:pointer; text-decoration:none; transition:background .2s,transform .15s; }
+.applyBtn:hover { background:var(--orange-h); transform:translateY(-1px); }
+
+.loading { display:flex; gap:10px; align-items:center; padding:4rem 2rem; color:var(--t2); font-size:.9rem; }
+.empty { text-align:center; padding:4rem 2rem; }
+.emptyIcon { font-size:2.5rem; opacity:.25; margin-bottom:.7rem; }
+.emptyTitle { font-family:var(--fd); font-size:1.15rem; font-weight:700; color:var(--navy); margin-bottom:.4rem; }
+.emptySub { font-size:.85rem; color:var(--t3); }
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+@media(max-width:600px) { .grid { grid-template-columns:1fr; } }
