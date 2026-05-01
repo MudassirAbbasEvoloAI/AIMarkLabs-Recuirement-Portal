@@ -21,14 +21,14 @@ export default function Navbar() {
         </svg>
       </Link>
 
-      <div className={styles.links}>
+      {/* <div className={styles.links}>
         {nav.map(n => (
           <Link key={n.href} href={n.href} className={`${styles.link} ${path === n.href ? styles.active : ''}`}>
             {n.label}
           </Link>
         ))}
         <Link href="/careers" className={styles.cta}>Hire Now →</Link>
-      </div>
+      </div> */}
     </nav>
   );
 }
