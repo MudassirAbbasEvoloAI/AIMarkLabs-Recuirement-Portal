@@ -15,7 +15,6 @@ function initials(n) { return n?.split(' ').slice(0,2).map(w=>w[0]?.toUpperCase(
 export default function PortalApplicationsPage() {
   const [apps, setApps]             = useState([]);
   const [loading, setLoading]       = useState(true);
-  const [fallback, setFallback]     = useState(false);
   const [search, setSearch]         = useState('');
   const [status, setStatus]         = useState('All');
   const [position, setPosition]     = useState('All');
@@ -32,7 +31,7 @@ export default function PortalApplicationsPage() {
     try {
       const res = await fetch(`/api/applications?${params}`);
       const d = await res.json();
-      setApps(d.applications || []); setFallback(d.fallback||false);
+      setApps(d.applications || []); 
     } catch { setApps([]); }
     finally { setLoading(false); }
   }, [status, search, sort]);
@@ -69,8 +68,6 @@ export default function PortalApplicationsPage() {
         <div><h1 className={s.title}>Applications <span>Dashboard</span></h1><p className={s.sub}>Manage all job applications across positions</p></div>
         <button className={s.refresh} onClick={fetch_}>↻ Refresh</button>
       </div>
-
-      {fallback && <div className={s.noticebar}>⚠️ <strong>Demo Mode</strong> — Showing sample data.</div>}
 
       <div className={s.stats}>
         {[['Total',stats.total,'orange'],['Pending',stats.pending,'blue'],['Reviewing',stats.reviewing,'yellow'],['Shortlisted',stats.shortlisted,'purple'],['Hired',stats.hired,'green']].map(([l,v,c])=>(

@@ -12,7 +12,6 @@ function initials(n) { return n?.split(' ').slice(0,2).map(w=>w[0]?.toUpperCase(
 export default function PortalLeadsPage() {
   const [leads, setLeads]           = useState([]);
   const [loading, setLoading]       = useState(true);
-  const [fallback, setFallback]     = useState(false);
   const [search, setSearch]         = useState('');
   const [status, setStatus]         = useState('All');
   const [sort, setSort]             = useState('newest');
@@ -28,7 +27,7 @@ export default function PortalLeadsPage() {
     try {
       const res = await fetch(`/api/leads?${p}`);
       const d = await res.json();
-      setLeads(d.leads||[]); setFallback(d.fallback||false);
+      setLeads(d.leads||[]);
     } catch { setLeads([]); }
     finally { setLoading(false); }
   }, [status, search, sort]);
@@ -56,8 +55,6 @@ export default function PortalLeadsPage() {
         <div><h1 className={s.title}>Leads <span>Dashboard</span></h1><p className={s.sub}>Manage all recruitment service inquiries</p></div>
         <button className={s.refresh} onClick={fetch_}>↻ Refresh</button>
       </div>
-
-      {fallback && <div className={s.noticebar}>⚠️ <strong>Demo Mode</strong> — Showing sample data.</div>}
 
       <div className={s.stats}>
         {[['Total',stats.total,'orange'],['New',stats.new,'blue'],['Contacted',stats.contacted,'yellow'],['In Progress',stats.inProgress,'purple'],['Closed',stats.closed,'green']].map(([l,v,c])=>(
