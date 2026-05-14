@@ -1,0 +1,20 @@
+{
+  "/api/applications/route": "/api/applications",
+  "/_not-found/page": "/_not-found",
+  "/api/applications/[id]/route": "/api/applications/[id]",
+  "/api/leads/[id]/route": "/api/leads/[id]",
+  "/api/leads/route": "/api/leads",
+  "/api/positions/route": "/api/positions",
+  "/api/positions/all/route": "/api/positions/all",
+  "/api/setup-auth/route": "/api/setup-auth",
+  "/api/positions/[id]/route": "/api/positions/[id]",
+  "/api/seed/route": "/api/seed",
+  "/page": "/",
+  "/apply/page": "/apply",
+  "/careers/page": "/careers",
+  "/portal/leads/page": "/portal/leads",
+  "/portal/login/page": "/portal/login",
+  "/portal/applications/page": "/portal/applications",
+  "/portal/positions/page": "/portal/positions",
+  "/portal/settings/page": "/portal/settings"
+}

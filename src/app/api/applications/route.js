@@ -53,7 +53,7 @@ export async function POST(req) {
     const details       = formData.get('details') || '';
     const resumeFile    = formData.get('resume');
 
-    if (!name || !email || !phone || !positionId)
+    if (!name || !phone || !positionId)
       return NextResponse.json({ error: 'Required fields missing' }, { status: 400 });
 
     let resume_name = null;
